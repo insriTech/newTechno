@@ -64,16 +64,15 @@ const Blog = () => {
                     {
                         blogs.map((item, index) => (
                             <>
-                                <div key={index} className='p-2 rounded-md bg-[#F5F7F8] flex flex-col justify-between gap-2'>
+                                <div key={index} className='p-2 rounded-md  flex flex-col justify-between gap-2 cursor-pointer'>
                                     <div className='flex flex-col gap-2'>
-                                        <div className='w-full h-[200px] bg-green-400 overflow-hidden'>
+                                        <div className='w-full h-[200px] bg-gray-200 rounded-md overflow-hidden'>
                                             <Image className='w-full h-full object-cover rounded-sm' width={100} height={100} src={item.image} alt='' unoptimized />
 
                                         </div>
                                         <h1 className='text-lg'>{item.title}</h1>
                                         <p className='text-sm'>{item.shortDescription}</p>
                                     </div>
-                                    <button className='p-2 rounded-md hover:bg-[#FFE843] hover:text-black bg-black text-white'>learn more</button>
                                 </div>
                             </>
                         ))

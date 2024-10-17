@@ -17,10 +17,12 @@ const Nav = () => {
     return (
         <>
             <div className='w-full h-[60px] bg-[#F5F7F8] flex justify-between items-center px-4'>
-                <div className='flex relative'>
-                    <h1 className='text-4xl font-bold'>InSri</h1>
-                    <span className='w-[10px] h-[10px] bg-[#FFE843] rounded-full absolute top-1 right-0'></span>
-                </div>
+                <Link href="/">
+                    <div className='flex relative cursor-pointer'>
+                        <h1 className='text-4xl font-bold'>InSri</h1>
+                        <span className='w-[10px] h-[10px] bg-[#FFE843] rounded-full absolute top-1 right-0'></span>
+                    </div>
+                </Link>
 
                 {/* Burger Icon for smaller screens */}
                 <div className='lg:hidden'>
