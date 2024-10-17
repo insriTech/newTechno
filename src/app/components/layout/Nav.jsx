@@ -59,9 +59,11 @@ const Nav = () => {
 
                     {/* Button */}
                     <li>
-                        <div className='p-2 px-4 bg-[#FFE843] text-black rounded-md flex items-center gap-2 cursor-pointer hover:bg-black hover:text-white'>
-                            Lets Connect <IoIosArrowRoundForward className='text-xl' />
-                        </div>
+                        <Link href="/contact">
+                            <div className='p-2 px-4 bg-[#FFE843] text-black rounded-md flex items-center gap-2 cursor-pointer hover:bg-black hover:text-white'>
+                                Lets Connect <IoIosArrowRoundForward className='text-xl' />
+                            </div>
+                        </Link>
                     </li>
                 </ul>
             </div>
