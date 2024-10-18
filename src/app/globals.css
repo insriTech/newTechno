@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css or your component file */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.stroke {
+  -webkit-text-stroke: 2px #485061;
+}
+/* 40495c */
