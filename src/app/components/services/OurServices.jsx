@@ -50,7 +50,7 @@ const OurServices = () => {
                 "24/7 Monitoring",
                 "Custom IT Solutions"
             ],
-            "image": " https://img.freepik.com/premium-photo/yellow-wall-with-number-4-it_1103290-52689.jpg?ga=GA1.1.1262692796.1695691184&semt=ais_hybrid"
+            "image": " https://img.freepik.com/premium-photo/man-business-suit-is-using-tablet-with-word-data-screen_1006603-5736.jpg?ga=GA1.1.1262692796.1695691184&semt=ais_hybrid"
         },
         {
             "name": "Digital Marketing",
