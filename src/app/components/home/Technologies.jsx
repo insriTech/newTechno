@@ -112,22 +112,24 @@ const technologiesData = [
 
 const Technologies = () => {
     const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        autoplay: true, // Enables auto-scrolling
-        autoplaySpeed: 2000, // Time between auto-scrolls
-        slidesToShow: 7,  // Number of items to show at once
-        slidesToScroll: 1, // Number of items to scroll at once
-        nextArrow: <></>,
-        prevArrow: <></>,
+        dots: false,           // Disable dots for a cleaner look
+        infinite: true,        // Enable infinite scrolling
+        speed: 2000,          // Set a high speed to control how fast the slides move
+        autoplay: true,        // Enable autoplay
+        autoplaySpeed: 0,      // Set autoplay speed to 0 for continuous scrolling
+        slidesToShow: 7,       // Number of items to display
+        slidesToScroll: 1,     // Set to 1 to allow continuous smooth movement
+        cssEase: "linear",     // Linear easing for smooth, consistent scrolling
+        pauseOnHover: true,   // Do not stop on hover
+        nextArrow: <></>,      // Disable next arrow
+        prevArrow: <></>,      // Disable prev arrow
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 5,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -135,7 +137,7 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -143,7 +145,7 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false
                 }
             }
         ]
@@ -153,15 +155,17 @@ const Technologies = () => {
     /*  */
 
     const settings1 = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        autoplay: true, // Enables auto-scrolling
-        autoplaySpeed: 2000, // Time between auto-scrolls
-        slidesToShow: 7,  // Number of items to show at once
-        slidesToScroll: 1, // Number of items to scroll at once
-        nextArrow: <></>,
-        prevArrow: <></>,
+        dots: false,           // Disable dots for a cleaner look
+        infinite: true,        // Enable infinite scrolling
+        speed: 2000,          // Set a high speed to control how fast the slides move
+        autoplay: true,        // Enable autoplay
+        autoplaySpeed: 0,      // Set autoplay speed to 0 for continuous scrolling
+        slidesToShow: 7,       // Number of items to display
+        slidesToScroll: 1,     // Set to 1 to allow continuous smooth movement
+        cssEase: "linear",     // Linear easing for smooth, consistent scrolling
+        pauseOnHover: true,   // Do not stop on hover
+        nextArrow: <></>,      // Disable next arrow
+        prevArrow: <></>,      // Disable prev arrow
         rtl: true,
         responsive: [
             {
@@ -169,7 +173,7 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 5,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -177,7 +181,7 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -185,7 +189,7 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false
                 }
             }
         ]

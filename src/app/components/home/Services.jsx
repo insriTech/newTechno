@@ -45,20 +45,22 @@ const Services = () => {
 
 
                 {/* Services Cards */}
-                <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8'>
+                <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
                     {
                         services.map((items, index) => (
-                            <div key={index} className='p-2 rounded-md bg-[#F5F7F8] flex flex-col gap-12'>
+                            <div key={index} className='p-2 rounded-md bg-white   flex flex-col gap-12'>
                                 <div className='flex flex-col gap-4'>
                                     <div className='w-[50px] h-[50px] p-4 rounded-full bg-gray-200 flex justify-center items-center'>
                                         {items.icon}
                                     </div>
-                                    <h1 className='text-3xl font-bold'>{items.name}</h1>
-                                    <p>{items.description}</p>
+                                    <h1 className='text-2xl font-bold'>{items.name}</h1>
+                                    <p className='text-gray-600'>{items.description}</p>
                                 </div>
 
-                                <div className='w-[50px] h-[50px] p-4 rounded-full hover:bg-[#FFE843] flex cursor-pointer justify-center items-center'>
-                                    <IoArrowForward className='text-xl' />
+                                <div className='flex items-center justify-start'>
+                                    <span className='text-yellow-500 font-semibold flex items-center gap-2 hover:gap-3 transition-all cursor-pointer'>
+                                        Learn More <IoArrowForward className='text-xl' />
+                                    </span>
                                 </div>
                             </div>
                         ))
