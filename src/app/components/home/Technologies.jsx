@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from 'next/image';
 import React from 'react';
 import Slider from "react-slick";
@@ -107,16 +107,13 @@ const technologiesData = [
     }
 ];
 
-
-/* svg icons - https://worldvectorlogo.com/ */
-
 const Technologies = () => {
     const settings = {
-        dots: false,
+        dots: false, // Removed dots
         infinite: true,
         speed: 500,
         autoplay: true, // Enables auto-scrolling
-        autoplaySpeed: 2000, // Time between auto-scrolls
+        autoplaySpeed: 1000, // Increased speed between auto-scrolls
         slidesToShow: 7,  // Number of items to show at once
         slidesToScroll: 1, // Number of items to scroll at once
         nextArrow: <></>,
@@ -127,7 +124,7 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 5,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false // Removed dots
                 }
             },
             {
@@ -135,7 +132,7 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false // Removed dots
                 }
             },
             {
@@ -143,21 +140,18 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false // Removed dots
                 }
             }
         ]
     };
 
-
-    /*  */
-
     const settings1 = {
-        dots: false,
+        dots: false, // Removed dots
         infinite: true,
         speed: 500,
         autoplay: true, // Enables auto-scrolling
-        autoplaySpeed: 2000, // Time between auto-scrolls
+        autoplaySpeed: 1000, // Increased speed between auto-scrolls
         slidesToShow: 7,  // Number of items to show at once
         slidesToScroll: 1, // Number of items to scroll at once
         nextArrow: <></>,
@@ -169,7 +163,7 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 5,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false // Removed dots
                 }
             },
             {
@@ -177,7 +171,7 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false // Removed dots
                 }
             },
             {
@@ -185,7 +179,7 @@ const Technologies = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    dots: true
+                    dots: false // Removed dots
                 }
             }
         ]
@@ -193,54 +187,42 @@ const Technologies = () => {
 
     return (
         <>
-            <div className='w-full h-auto  px-4 py-14 mt-14 flex flex-col gap-20 '>
-                <div className="w-full h-auto ">
-
+            <div className='w-full h-auto px-4 py-14 mt-14 flex flex-col gap-20'>
+                <div className="w-full h-auto">
                     <Slider {...settings}>
                         {technologiesData.map((tech, index) => (
-
-
-                            <>
-                                <div key={index} className='w-[100px] h-[100px] rounded-full flex justify-center items-center p-4 bg-[#F5F7F8] cursor-pointer' title={tech.name}>
-                                    <Image
-                                        width={100}
-                                        height={100}
-                                        src={tech.logo}
-                                        alt={tech.name}
-                                        className='w-[80px] h-[80px] mb-2 object-contain'
-                                    />
-                                </div>
-                            </>
-
+                            <div key={index} className='flex flex-col justify-center items-center p-4 bg-[#F5F7F8] cursor-pointer rounded-full mx-2'>
+                                <Image
+                                    width={100}
+                                    height={100}
+                                    src={tech.logo}
+                                    alt={tech.name}
+                                    className='w-[80px] h-[80px] object-contain'
+                                />
+                                <div className="mt-2 text-center font-semibold">{tech.name}</div> {/* Technology name */}
+                            </div>
                         ))}
                     </Slider>
                 </div>
 
-                <div className="w-full h-auto  ">
-
+                <div className="w-full h-auto">
                     <Slider {...settings1}>
                         {technologiesData.map((tech, index) => (
-
-
-                            <>
-                                <div key={index} className='w-[100px] h-[100px] rounded-full flex justify-center items-center p-4 bg-[#F5F7F8] cursor-pointer' title={tech.name}>
-                                    <Image
-                                        width={100}
-                                        height={100}
-                                        src={tech.logo}
-                                        alt={tech.name}
-                                        className='w-[80px] h-[80px] mb-2 object-contain'
-                                    />
-                                </div>
-                            </>
-
+                            <div key={index} className='flex flex-col justify-center items-center p-4 bg-[#F5F7F8] cursor-pointer rounded-full mx-2'>
+                                <Image
+                                    width={100}
+                                    height={100}
+                                    src={tech.logo}
+                                    alt={tech.name}
+                                    className='w-[80px] h-[80px] object-contain'
+                                />
+                                <div className="mt-2 text-center font-semibold">{tech.name}</div> {/* Technology name */}
+                            </div>
                         ))}
                     </Slider>
                 </div>
             </div>
-
         </>
-
     );
 }
 
