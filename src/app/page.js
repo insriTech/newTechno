@@ -10,11 +10,13 @@ import Blog from "./components/home/Blog";
 import Team from "./components/home/Teams";
 import Action from "./components/home/Action";
 import Footer from "./components/layout/Footer";
+import Design from "./components/home/Design";
 export default function Home() {
   return (
     <>
       <Nav />
       <Hero />
+      <Design />
       <Services />
       <WhyChooseUs />
       <Technologies />
