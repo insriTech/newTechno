@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 
 const Blog = () => {
     const blogs = [
@@ -26,64 +26,31 @@ const Blog = () => {
             "title": "The Role of AI in Shaping Modern Marketing",
             "shortDescription": "AI tools like predictive analytics and chatbots are revolutionizing modern marketing, optimizing campaigns and customer experiences.",
             "image": "https://img.freepik.com/free-photo/artificial-intelligence-tech-work_53876-122906.jpg"
-        },
-        {
-            "id": 5,
-            "title": "Top Cybersecurity Trends for 2024",
-            "shortDescription": "Stay ahead of emerging cybersecurity threats with insights on encryption, zero trust models, and AI-based security solutions in 2024.",
-            "image": "https://img.freepik.com/free-photo/hand-showing-padlock-icon-digital-security_53876-125188.jpg"
-        },
-        {
-            "id": 6,
-            "title": "How Remote Work is Evolving in 2024",
-            "shortDescription": "Explore the latest trends in remote work for 2024, from flexible workspaces to digital nomadism and productivity tools.",
-            "image": "https://img.freepik.com/free-photo/businessman-working-laptop-office_53876-134480.jpg"
-        },
-        {
-            "id": 7,
-            "title": "Sustainable Tech Innovations for a Greener Future",
-            "shortDescription": "Discover the top green technologies, from renewable energy solutions to eco-friendly data centers, driving sustainability in 2024.",
-            "image": "https://img.freepik.com/free-photo/sustainable-energy-concept-wind-power_53876-99228.jpg"
-        },
-        {
-            "id": 8,
-            "title": "The Future of E-commerce: Personalization and AI",
-            "shortDescription": "AI-driven personalization is transforming the e-commerce landscape, enhancing customer experiences with tailored recommendations and services.",
-            "image": "https://img.freepik.com/free-photo/shopping-cart-laptop-with-notebook-side_1150-13004.jpg"
         }
-    ]
-
+    ];
 
     return (
-        <>
-            <div className='w-full h-auto  py-12 px-4'>
-                <h1 className='text-6xl font-bold text-start'>Latest Insights</h1>
-
-                <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4'>
-
-                    {
-                        blogs.map((item, index) => (
-                            <>
-                                <div key={index} className='p-2 rounded-md bg-[#F5F7F8] flex flex-col justify-between gap-2'>
-                                    <div className='flex flex-col gap-2'>
-                                        <div className='w-full h-[200px] bg-green-400 overflow-hidden'>
-                                            <Image className='w-full h-full object-cover rounded-sm' width={100} height={100} src={item.image} alt='' unoptimized />
-
-                                        </div>
-                                        <h1 className='text-lg'>{item.title}</h1>
-                                        <p className='text-sm'>{item.shortDescription}</p>
-                                    </div>
-                                    <button className='p-2 rounded-md hover:bg-[#FFE843] hover:text-black bg-black text-white'>learn more</button>
-                                </div>
-                            </>
-                        ))
-                    }
-
-
-                </div>
+        <div className='w-full h-auto px-4 mt-8 py-12'>
+            <h1 className='text-3xl font-bold text-start'>Latest Insights</h1>
+            <p className='text-xl text-start mt-2'>
+                Stay updated with the latest trends and insights in technology and business.
+            </p>
+            <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4'>
+                {blogs.map((item) => (
+                    <div key={item.id} className='p-4 rounded-md bg-[#F5F7F8] flex flex-col justify-between gap-2'>
+                        <div className='flex flex-col gap-2'>
+                            <div className='w-full h-[200px] bg-green-400 overflow-hidden'>
+                                <Image className='w-full h-full object-cover rounded-sm' width={100} height={100} src={item.image} alt={item.title} unoptimized />
+                            </div>
+                            <h1 className='text-lg font-semibold'>{item.title}</h1>
+                            <p className='text-sm text-gray-600'>{item.shortDescription}</p>
+                        </div>
+                        <button className='p-2 rounded-md hover:bg-[#FFE843] hover:text-black bg-black text-white'>Learn More</button>
+                    </div>
+                ))}
             </div>
-        </>
-    )
+        </div>
+    );
 }
 
-export default Blog
+export default Blog;
