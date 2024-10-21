@@ -5,9 +5,9 @@ import Nav from '../components/layout/Nav'
 import Whowe from '../components/about/Whowe'
 import VisionMission from '../components/about/VisionMission'
 import CoreValue from '../components/about/CoreValue'
-import WhyChooseUs from '../components/home/WhyChooseUs'
+// import WhyChooseUs from '../components/home/WhyChooseUs'
 import Teams from '../components/home/Teams'
-import Testimonials from '../components/home/Testimonials'
+// import Testimonials from '../components/home/Testimonials'
 import Careers from '../components/about/Careers'
 import Footer from '../components/layout/Footer'
 import Hero from '../components/shared/Hero'
@@ -27,8 +27,8 @@ const About = () => {
       <Whowe />
       <VisionMission />
       <CoreValue />
-      <WhyChooseUs />
-      <Testimonials />
+      {/* <WhyChooseUs /> */}
+      {/* <Testimonials /> */}
       <Teams />
       <Careers />
       <Footer />

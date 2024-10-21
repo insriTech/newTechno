@@ -48,7 +48,7 @@ const Services = () => {
                 <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
                     {
                         services.map((items, index) => (
-                            <div key={index} className='p-2 rounded-md bg-white   flex flex-col gap-12'>
+                            <div key={index} className='p-2 rounded-md bg-white  flex flex-col gap-6'>
                                 <div className='flex flex-col gap-4'>
                                     <div className='w-[50px] h-[50px] p-4 rounded-full bg-gray-200 flex justify-center items-center'>
                                         {items.icon}
