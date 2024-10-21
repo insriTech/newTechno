@@ -37,9 +37,9 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <div className='w-full h-auto px-4 mt-8 py-12'>
-            <h1 className='text-6xl font-bold text-start'>Why inSri?</h1>
-            <p className='text-lg text-start mt-4'>Expertise that Drives Digital Transformation</p>
+        <div className='w-full h-auto xl:px-4 md:px-4 px-2 mt-8 py-12'>
+            <h1 className='xl:text-6xl md:text-5xl text-4xl font-bold text-start'>Why inSri?</h1>
+            <p className='xl:text-lg md:text-lg text-md text-start mt-4'>Expertise that Drives Digital Transformation</p>
 
             <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
                 {whyChooseUsData.map((item, index) => (

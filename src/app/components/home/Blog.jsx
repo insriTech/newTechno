@@ -56,8 +56,8 @@ const Blog = () => {
 
     return (
         <>
-            <div className='w-full h-auto  py-12 px-4'>
-                <h1 className='text-6xl font-bold text-start'>Latest Insights</h1>
+            <div className='w-full h-auto  py-12 xl:px-4 md:px-4 px-2'>
+                <h1 className='xl:text-6xl md:text-5xl text-4xl font-bold text-start'>Latest Insights</h1>
 
                 <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4'>
 

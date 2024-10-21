@@ -3,9 +3,9 @@ import React from 'react'
 const Action = () => {
     return (
         <>
-            <div className='w-full h-auto  flex flex-col items-center justify-center gap-4 py-10'>
-                <h1 className='text-8xl text-center font-bold'>Lets Build Something Amazing Together</h1>
-                <p className='text-xl text-center'>Ready to take your business to the next level?</p>
+            <div className='w-full h-auto  flex flex-col items-center justify-center gap-4 py-10 xl:px-0 md:px-0 px-0'>
+                <h1 className='xl:text-8xl md:text-6xl text-4xl text-center font-bold'>Lets Build Something Amazing Together</h1>
+                <p className='xl:text-xl md:text-xl text-lg text-center'>Ready to take your business to the next level?</p>
                 {/* Contact Us Today */}
                 <button className='p-2 px-4 rounded-md hover:bg-[#FFE843] hover:text-black bg-black text-white'>Contact Us Today</button>
 

@@ -30,9 +30,9 @@ const Process = () => {
     ];
 
     return (
-        <div className="process-container px-6 py-12 bg-white">
-            <h1 className='text-6xl font-bold text-start mb-4 text-gray-900'>Our Process</h1>
-            <p className='text-lg text-gray-700 mb-8 text-start'>
+        <div className="process-container xl:px-4 md:px-4 px-2 py-12 bg-white">
+            <h1 className='xl:text-6xl md:text-5xl text-4xl font-bold text-start  text-gray-900'>Our Process</h1>
+            <p className='xl:text-lg md:text-lg text-md text-gray-700 mb-8 text-start'>
                 A clear, structured approach to delivering results. Here’s how we take your project from concept to completion.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

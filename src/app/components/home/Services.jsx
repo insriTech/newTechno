@@ -39,9 +39,9 @@ const Services = () => {
 
     return (
         <>
-            <div className='w-full h-auto mt-8  px-4'>
-                <h1 className='text-6xl font-bold text-start'>Our Expertise</h1>
-                <p className='text-lg text-start mt-4'>Comprehensive Solutions for Your Digital Success</p>
+            <div className='w-full h-auto mt-8  xl:px-4 md:px-4 px-2'>
+                <h1 className='xl:text-6xl md:text-5xl text-4xl font-bold text-start'>Our Expertise</h1>
+                <p className='xl:text-lg md:text-lg text-md text-start mt-4'>Comprehensive Solutions for Your Digital Success</p>
 
 
                 {/* Services Cards */}

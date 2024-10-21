@@ -146,18 +146,46 @@ const Teams = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4, // Show 4 cards at a time
+        slidesToShow: 4, // Show 4 cards at a time for larger screens
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
         nextArrow: <></>,
         prevArrow: <></>,
+        responsive: [
+            {
+                breakpoint: 1200, // For screens smaller than 1200px
+                settings: {
+                    slidesToShow: 3, // Show 3 cards
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 992, // For screens smaller than 992px (medium screens)
+                settings: {
+                    slidesToShow: 2, // Show 2 cards
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 768, // For screens smaller than 768px (tablets)
+                settings: {
+                    slidesToShow: 1, // Show 1 card
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            }
+        ]
     };
+    
 
     return (
-        <div className="testimonials-container px-4 py-12 rounded-md ">
-            <h1 className='text-6xl font-bold '>Meet the Team</h1>
-            <p className='text-lg  mt-4'>The Minds Behind the Magic</p>
+        <div className="testimonials-container xl:px-4 md:px-4 px-2 py-12 rounded-md ">
+            <h1 className='xl:text-6xl md:text-5xl text-4xl font-bold '>Meet the Team</h1>
+            <p className='xl:text-lg md:text-lg text-md  mt-4'>The Minds Behind the Magic</p>
             <Slider {...settings}>
                 {teamMembers.map((team, index) => (
                     <div key={index} className="p-2 text-center">

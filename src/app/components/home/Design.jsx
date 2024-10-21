@@ -24,18 +24,18 @@ const Design = () => {
 
     return (
         <>
-            <div className='w-full h-auto  px-4 py-4 flex flex-col gap-4'>
+            <div className='w-full h-auto  xl:px-4 md:px-4 px-2 py-4 flex flex-col gap-4'>
 
                 {
                     services.map((items, index) => (
                         <>
                             <div key={index} className={`w-full xl:h-[60vh] h-auto flex  items-center ${index % 2 === 0 ? 'xl:flex-row md:flex-row  flex-col' : 'xl:flex-row-reverse md:flex-row-reverse flex-col'}   `}>
                                 {/* Images */}
-                                <div className='xl:w-[50%] w-full h-full flex justify-center items-center p-4'>
+                                <div className='xl:w-[50%] w-full h-full flex justify-center items-center xl:p-4 md:p-4 p-2'>
                                     <Image width={100} height={100} unoptimized src={items.image} alt="services" className='w-full h-full rounded-md object-cover' />
                                 </div>
                                 {/* Content */}
-                                <div className='xl:w-[50%] w-full h-full flex flex-col xl:gap-10 gap-1 justify-start p-4'>
+                                <div className='xl:w-[50%] w-full h-full flex flex-col xl:gap-10 gap-1 justify-start xl:p-4 md:p-4 p-2'>
                                     <h1 className='xl:text-5xl text-3xl font-bold'>{items.heading}</h1>
                                     <p className='xl:text-xl text-md'>{items.description}</p>
                                     <div>

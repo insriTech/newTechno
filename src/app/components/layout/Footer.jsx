@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-gray-900 text-white py-8 px-12 rounded-t-3xl relative overflow-hidden">
+        <footer className="w-full bg-gray-900 text-white py-8 xl:px-12 md:px-12 px-4 rounded-t-3xl relative overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 gap-8 relative z-10">
                 {/* Company Info */}
                 <div className="w-auto">
@@ -73,8 +73,8 @@ const Footer = () => {
                 <p>© 2024 inSri Tech Solutions Pvt Ltd. All rights reserved.</p>
             </div>
 
-            <div className='absolute -bottom-40 left-1/2 transform -translate-x-1/2 flex justify-center items-center'>
-                <h1 className='text-[50vh] font-black text-center text-transparent stroke '>
+            <div className='absolute xl:-bottom-40 md:-bottom-40 -bottom-20 left-1/2 transform -translate-x-1/2 flex justify-center items-center'>
+                <h1 className='xl:text-[50vh] md:text-[50vh] text-[25vh] font-black text-center text-transparent stroke '>
                     InSri
                 </h1>
             </div>

@@ -62,20 +62,40 @@ const Testimonials = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3, // Show 3 cards at a time
+        slidesToShow: 3, // Show 3 cards at a time for larger screens
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
         nextArrow: <></>,
         prevArrow: <></>,
+        responsive: [
+            {
+                breakpoint: 1024, // For screens smaller than 1024px
+                settings: {
+                    slidesToShow: 2, // Show 2 cards
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 768, // For screens smaller than 768px (tablet size)
+                settings: {
+                    slidesToShow: 1, // Show 1 card
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            }
+        ]
     };
+
 
     return (
         <div className="testimonials-container px-4 py-12  mt-12 bg-[#111827]">
-            <h1 className="text-6xl font-bold text-center text-white">
+            <h1 className="xl:text-6xl md:text-6xl text-4xl font-bold text-center text-white">
                 What Our Clients Say
             </h1>
-            <p className="text-lg mt-4 text-center text-white">
+            <p className="xl:text-lg md:textlg text-sm mt-4 text-center text-white">
                 Hear from the People We’ve Worked With
             </p>
             <Slider {...settings}>

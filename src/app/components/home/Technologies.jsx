@@ -197,7 +197,7 @@ const Technologies = () => {
 
     return (
         <>
-            <div className='w-full h-auto  px-4 py-14 mt-14 flex flex-col gap-20 '>
+            <div className='w-full h-auto  xl:px-4 md:px-4 px-2 py-14 mt-14 flex flex-col gap-20 '>
                 <div className="w-full h-auto ">
 
                     <Slider {...settings}>
