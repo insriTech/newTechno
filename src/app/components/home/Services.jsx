@@ -68,7 +68,7 @@ const Services = () => {
     };
 
     return (
-        <div className='w-full h-auto mt-8 px-4'>
+        <div className='w-full h-auto px-4 mt-8 py-12'>
             <h1 className='text-3xl md:text-4xl font-bold text-start'>Our Expertise</h1>
             <p className='text-xl text-start mt-2'>Comprehensive Solutions for Your Digital Success</p>
 
