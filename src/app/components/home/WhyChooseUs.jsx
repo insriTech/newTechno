@@ -6,35 +6,42 @@ const WhyChooseUs = () => {
     const whyChooseUsData = [
         {
             title: "Cutting-edge Technology",
-            description: "Stay ahead with the latest technologies like AI, machine learning, and blockchain to boost efficiency, streamline operations, and future-proof your business. Our solutions are designed to give you a competitive edge by leveraging innovation.",
+            description: "We harness the power of advanced technologies like AI, machine learning, and blockchain to enhance efficiency, improve business operations, and provide innovative solutions. Our approach helps you stay ahead of competitors by adopting the latest advancements.",
             icon: IoCodeSlashSharp,
-            color: 'bg-blue-100 text-blue-600' // Blue for technology
+            color: 'bg-blue-100 text-blue-600', // Blue for technology
+            bg: '#66B2FF' // Medium-light blue
         },
         {
             title: "User-Centered Design",
-            description: "We design intuitive and visually appealing interfaces that enhance user engagement and satisfaction. Our UI/UX approach ensures a seamless user experience, whether it's for a mobile app or a website.",
+            description: "Our user-centered design philosophy ensures intuitive, visually appealing digital experiences that engage users. We focus on optimizing every interaction, making your website or app user-friendly, aesthetically pleasing, and seamless, leading to higher customer satisfaction and retention.",
             icon: IoBrush,
-            color: 'bg-pink-100 text-pink-600' // Pink for creativity/design
+            color: 'bg-pink-100 text-orange-600', // Pink for creativity/design
+            // bg: '#FFB266' // Medium-light orange
         },
         {
             title: "Tailored Solutions",
-            description: "Our custom software solutions are designed to fit your business needs, from improving productivity to automating processes. We work closely with you to create solutions that evolve with your business and support long-term growth.",
+            description: "We develop custom software solutions that fit your business’s specific needs, streamline operations, and improve productivity. From automation to scalability, our tailored solutions support long-term business growth, allowing you to remain agile and responsive in your industry.",
             icon: IoConstructOutline,
-            color: 'bg-yellow-100 text-yellow-600' // Yellow for construction/solutions
+            color: 'bg-yellow-100 text-yellow-600', // Yellow for construction/solutions
+            bg: '#FFD966' // Medium-light yellow
         },
         {
             title: "Global Experience",
-            description: "Projects delivered for clients across the globe, giving us a deep understanding of diverse markets and user needs.",
+            description: "With a portfolio of successful projects for clients worldwide, we offer deep insights into diverse markets. Our global experience enables us to deliver effective solutions tailored to your business, no matter where you operate in the world.",
             icon: AiOutlineGlobal,
-            color: 'bg-green-100 text-green-600' // Green for global reach
+            color: 'bg-green-100 text-green-600', // Green for global reach
+            bg: '#66CC66' // Medium-light green
         },
         {
             title: "Proven Track Record",
-            description: "Successfully completed 200+ projects with 100% client satisfaction, showcasing our commitment to quality and results.",
+            description: "With over 200 completed projects and a commitment to excellence, we consistently deliver high-quality results. Our track record demonstrates our ability to meet client expectations, ensuring satisfaction and success in every project we undertake.",
             icon: IoCheckmarkCircleSharp,
-            color: 'bg-purple-100 text-purple-600' // Purple for achievement/trust
+            color: 'bg-purple-100 text-purple-600', // Purple for achievement/trust
+            bg: '#CC99FF' // Medium-light purple
         }
     ];
+    
+    
 
     return (
         <div className='w-full h-auto xl:px-4 md:px-4 px-2 mt-8 py-12'>
@@ -43,17 +50,17 @@ const WhyChooseUs = () => {
 
             <div className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
                 {whyChooseUsData.map((item, index) => (
-                    <div key={index} className='px-4 py-6 bg-white rounded-lg  relative'>
-                        <h1 className='text-8xl font-black absolute top-4 right-4 text-gray-100'>{index + 1}</h1>
-                        
+                    <div key={index} className={`px-4 py-6  rounded-lg  relative `} style={{ backgroundColor: `${item.bg}` }} >
+                        <h1 className='text-8xl font-black absolute top-0 right-2 strokenumber text-transparent'>{index + 1}</h1>
+
                         {/* Icon Container */}
                         <div className={`w-[50px] h-[50px] p-3 rounded-full flex justify-center items-center ${item.color}`}>
                             <item.icon className='text-2xl' />
                         </div>
-                        
+
                         {/* Title and Description */}
                         <h1 className='text-2xl font-bold mt-6'>{item.title}</h1>
-                        <p className='mt-3 text-gray-600'>{item.description}</p>
+                        <p className='mt-3 text-gray-800'>{item.description}</p>
                     </div>
                 ))}
             </div>
